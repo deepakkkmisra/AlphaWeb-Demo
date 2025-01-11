@@ -1,0 +1,181 @@
+.alphaJourneyCompContainer {
+  .alphaJourneyCompWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 20px 30px 20px;
+    .topHeaderSection {
+      p {
+        color: var(--brand-theme-color);
+        text-align: center;
+        font-family: var(--main-font-family);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px; /* 214.286% */
+      }
+      h2 {
+        color: var(--Light-Black);
+        text-align: center;
+        font-family: var(--header-font-family);
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 60px; /* 120% */
+        letter-spacing: -0.5px;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 30px;
+          line-height: normal;
+        }
+      }
+    }
+    .journeySlidesSection {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1140px;
+      .slidesLeftSection {
+        display: flex;
+        flex-direction: row;
+      }
+      .stepsSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .yearBox {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          align-items: center;
+
+          p {
+            color: var(--Light-Black);
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; /* 214.286% */
+            min-width: 36px;
+
+            @media only screen and (max-width: 400px) {
+              font-size: 13px;
+            }
+          }
+          .dot {
+            background: var(--Black);
+            width: 26px;
+            height: 26px;
+            border-radius: 100px;
+            cursor: pointer;
+            &.activeDot {
+              background: var(--brand-theme-color);
+            }
+          }
+        }
+        .lines {
+          background: var(--Black);
+          width: 2px;
+          height: 90px;
+          transform: translateX(28px);
+        }
+      }
+      .contentSection {
+        padding-left: 60px;
+        .yearSection {
+          h2 {
+            background: var(
+              --GRADIENT,
+              linear-gradient(
+                358deg,
+                #1f69ff 51.41%,
+                #05328d 68.28%,
+                #1f93ff 85.89%,
+                #1f69ff 101.03%
+              )
+            );
+
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: var(--header-font-family);
+            font-size: 49px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 60px;
+            letter-spacing: -0.5px;
+
+            @media only screen and (max-width: 768px) {
+              font-size: 35px;
+              line-height: normal;
+            }
+          }
+
+          .eventItem {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+
+            @media only screen and (max-width: 400px) {
+              margin-bottom: 10px;
+            }
+
+            p {
+              color: #2069ff;
+              font-family: var(--main-font-family);
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 30px; /* 214.286% */
+              @media only screen and (max-width: 400px) {
+                font-size: 13px;
+                line-height: normal;
+              }
+            }
+
+            p:last-of-type {
+              color: var(--Text, #131217);
+              font-family: var(--main-font-family);
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 28px; /* 175% */
+              @media only screen and (max-width: 400px) {
+                font-size: 13px;
+                line-height: normal;
+              }
+            }
+          }
+        }
+        .splide__pagination {
+          display: none;
+        }
+        @media only screen and (max-width: 768px) {
+          padding-left: 10px;
+        }
+      }
+      .navSection {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        svg {
+          cursor: pointer;
+        }
+        button {
+          cursor: pointer;
+          background: transparent;
+          border: 0;
+          outline: 0;
+          padding: 0;
+        }
+
+        @media only screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

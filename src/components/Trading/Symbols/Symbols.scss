@@ -1,0 +1,307 @@
+.symbolsMainWrapper {
+  .symbolsWrapper {
+    display: flex;
+    gap: 80px;
+    padding: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: 800px) {
+      padding: 60px 20px;
+    }
+
+    .symbolsTopSection {
+      max-width: 980px;
+      width: 100%;
+      p {
+        color: #206aff;
+        text-align: center;
+        font-family: var(--main-font-family);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+      }
+      .symbolTitleSection {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h3 {
+          color: #010310;
+          text-align: center;
+          font-family: var(--header-font-family);
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          letter-spacing: -0.5px;
+          @media only screen and (max-width: 800px) {
+            font-size: 30px;
+          }
+
+          span {
+            background: var(
+              --GRADIENT,
+              linear-gradient(
+                90deg,
+                #1f69ff 51.41%,
+                #05328d 68.28%,
+                #1f93ff 85.89%,
+                #1f69ff 101.03%
+              )
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: var(--header-font-family);
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -0.5px;
+            @media only screen and (max-width: 800px) {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+      .symbolInfo {
+        color: var(--new-text, #010310);
+        text-align: center;
+        font-family: var(--main-font-family);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 214.286% */
+      }
+    }
+    .forexTradingSection {
+      display: flex;
+      flex-direction: row;
+      padding: 40px;
+      align-items: flex-start;
+      gap: 30px;
+      border-radius: 30px;
+      background: var(
+        --new-dark-gradient,
+        linear-gradient(90deg, #010310 0%, #040c41 100%)
+      );
+      width: 100%;
+
+      @media only screen and (max-width: 1280px) {
+        flex-direction: column;
+      }
+
+      .ant-segmented {
+        height: 100vh;
+        max-height: 863px;
+        width: 100%;
+        max-width: 174px;
+        padding: 5px;
+        border-radius: 34px;
+        overflow: hidden;
+
+        @media only screen and (max-width: 1280px) {
+          max-height: fit-content;
+          max-width: 100%;
+        }
+
+        .ant-segmented-item {
+          display: flex;
+          height: 58px;
+          justify-content: center;
+          align-items: center;
+          color: var(--Light-Black);
+          text-align: center;
+          font-family: var(--main-font-family);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          border-radius: 29px;
+          @media only screen and (max-width: 1280px) {
+            flex: 1;
+          }
+          &.ant-segmented-item-selected {
+            color: #206aff;
+            flex-shrink: 0;
+            background: #fff;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          }
+        }
+      }
+
+      .forexTableWrapper {
+        width: 100%;
+
+        h2 {
+          color: var(--White);
+          font-family: var(--header-font-family);
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 100%; /* 30px */
+          text-transform: capitalize;
+          width: 100%;
+          margin-bottom: 60px;
+        }
+        .forexTable {
+          width: 100%;
+        }
+      }
+    }
+    .symbolBottomSection {
+      @media only screen and (max-width: 1100px) {
+        width: 100%;
+      }
+
+      .tradingHrsSection {
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+        @media only screen and (max-width: 1100px) {
+          width: 100%;
+        }
+
+        .tradingTimeHeader {
+          h3 {
+            color: #000;
+            font-family: var(--header-font-family);
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px; /* 127.273% */
+          }
+        }
+        .tradingTimeTableChart {
+          display: flex;
+          flex-direction: column;
+          max-width: 1259px;
+          width: 100%;
+          padding: 40px 40.5px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 20px;
+          border: 1px solid #cad0da;
+          @media only screen and (max-width: 1200px) {
+            padding: 25px;
+          }
+          @media only screen and (max-width: 1110px) {
+            padding: 20px;
+          }
+
+          .dayAndTimeSection {
+            max-width: 1178px;
+            width: 100%;
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+
+            @media only screen and (max-width: 1100px) {
+              display: flex;
+              flex-direction: row;
+            }
+            .daysMainSection {
+              display: flex;
+              gap: 40px;
+              align-items: center;
+              @media only screen and (max-width: 1180px) {
+                gap: 30px;
+              }
+              @media only screen and (max-width: 1110px) {
+                gap: 20px;
+              }
+              @media only screen and (max-width: 1100px) {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+              }
+              .daySection {
+                color: white;
+                display: flex;
+                padding: 10px 30px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                align-self: stretch;
+                border-radius: 32px;
+                background: var(
+                  --GRADIENT-2,
+                  linear-gradient(0deg, #020411 41.53%, #050d42 97.84%)
+                );
+              }
+              .weekSection {
+                color: #010310;
+                text-align: center;
+                font-family: var(--main-font-family);
+                font-size: 15px;
+                max-width: 95px;
+                font-style: normal;
+                width: 100%;
+                font-weight: 500;
+                line-height: 30px;
+                min-width: 95px;
+                &:nth-child(7) {
+                  min-width: 130px;
+                }
+                &:nth-child(8) {
+                  min-width: 130px;
+                }
+              }
+            }
+            .timeMainSection {
+              display: flex;
+              gap: 40px;
+              align-items: center;
+              @media only screen and (max-width: 1180px) {
+                gap: 30px;
+              }
+              @media only screen and (max-width: 1110px) {
+                gap: 20px;
+              }
+              @media only screen and (max-width: 1100px) {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+              }
+              .timeSection {
+                border-radius: 32px;
+                background: var(
+                  --GRADIENT-2,
+                  linear-gradient(0deg, #020411 41.53%, #050d42 97.84%)
+                );
+                display: flex;
+                padding: 10px 30px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                align-self: stretch;
+                color: white;
+              }
+              .fixedTime {
+                color: #010310;
+                text-align: center;
+                font-family: var(--main-font-family);
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px; /* 200% */
+                width: 100%;
+                max-width: 95px;
+                min-width: 94px;
+                &:nth-child(7) {
+                  min-width: 130px;
+                }
+                &:nth-child(8) {
+                  min-width: 130px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

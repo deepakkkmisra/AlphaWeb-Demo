@@ -1,0 +1,93 @@
+.lb_box {
+  border-radius: 20px;
+  border: 1px solid var(--new-brand, #2069ff);
+  background-image: url(../../assets/images/leaderboardBg.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 336px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+
+  @media only screen and (max-width: 900px) {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .bg_img {
+    position: absolute;
+    right: 0;
+    bottom: -9px;
+  }
+  .lb_box_header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    .lb_box_header_right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2 {
+      color: var(--Brand-colour, #0945c0);
+      font-family: Montserrat;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: capitalize;
+
+      @media only screen and (max-width: 1200px) {
+        font-size: 25px;
+      }
+    }
+    p {
+      color: #010310;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+  }
+  .lb_box_details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media only screen and (max-width: 900px) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      width: 100%;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      span {
+        color: #010310;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+      p {
+        color: #010310;
+        font-family: "Clash Display";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

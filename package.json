@@ -1,0 +1,58 @@
+{
+  "name": "alphacapital-website-frontend-2025",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.3.1",
+    "@mui/material": "^6.3.1",
+    "@reduxjs/toolkit": "^2.5.0",
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide": "^4.1.4",
+    "antd": "^5.23.0",
+    "cra-template": "1.2.0",
+    "formik": "^2.4.6",
+    "kursor": "^0.1.6",
+    "react": "^18.3.1",
+    "react-browser-router": "^2.1.2",
+    "react-countup": "^6.5.3",
+    "react-dom": "^18.3.1",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.0.2",
+    "react-scripts": "5.0.1",
+    "react-table": "^7.8.0",
+    "sass": "^1.83.0",
+    "swiper": "^11.1.15",
+    "yup": "^1.6.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.26.3",
+    "@locator/babel-jsx": "^0.4.4",
+    "@locator/runtime": "^0.4.4"
+  }
+}

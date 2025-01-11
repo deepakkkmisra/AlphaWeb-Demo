@@ -1,0 +1,57 @@
+.platform_wrapper{
+    margin: auto;
+    margin-bottom: 80px;
+    .platform_intro{
+        max-width: 980px;
+        margin: 100px auto auto auto;
+        h4{
+            color: #206AFF;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px; /* 214.286% */ 
+        }
+        h1{
+            color: var(--new-text, #010310);
+            text-align: center;
+            font-family: "Clash Display";
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 60px; /* 120% */
+            letter-spacing: -0.5px; 
+        }
+        p{
+            color: var(--new-text, #010310);
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px; /* 214.286% */  
+        }
+    }
+    .platform_intro_btns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 40px;
+        button{
+            max-width: 158px;
+        }
+        @media (max-width: 900px) {
+           flex-wrap: wrap;
+        }
+    }
+    .platform_type{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+
+}

@@ -1,0 +1,131 @@
+.careersPageContainer {
+  padding: 100px 20px;
+  .careersPageWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+
+    @media only screen and (max-width: 800px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .leftSectionCareer {
+      width: 100%;
+      max-width: 1028px;
+      .jobPageNavSmall {
+        width: 100%;
+        margin-bottom: 40px;
+        .ant-breadcrumb {
+          ol {
+            li {
+              span {
+                color: var(--Text, #131217);
+                text-align: center;
+                font-family: var(--main-font-family);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%; /* 22.4px */
+                opacity: 0.5;
+              }
+              &:last-child {
+                font-weight: 700;
+                background: var(
+                  --GRADIENT,
+                  linear-gradient(
+                    90deg,
+                    #1f69ff 51.41%,
+                    #05328d 68.28%,
+                    #1f93ff 85.89%,
+                    #1f69ff 101.03%
+                  )
+                );
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                span {
+                  opacity: 1 !important;
+                }
+              }
+            }
+            a {
+              color: var(--Text, #131217);
+              text-align: center;
+              font-family: var(--main-font-family);
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              opacity: 0.5;
+              line-height: 140%; /* 22.4px */
+            }
+          }
+        }
+      }
+      .careersPageContent {
+        width: 100%;
+      }
+    }
+
+    .jobNavigation {
+      border-radius: 34px;
+      background: #edf2fa;
+      display: flex;
+      padding: 30px 20px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      height: 100vh;
+      max-height: 863px;
+
+      @media only screen and (max-width: 800px) {
+        height: fit-content;
+      }
+      .navGrp {
+        height: fit-content;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #131217;
+        p {
+          color: var(--Light-Black);
+          text-align: center;
+          font-family: var(--main-font-family);
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 140%; /* 28px */
+          margin-bottom: 10px;
+        }
+        .ant-segmented {
+          width: 100%;
+          max-width: 422px;
+          padding: 5px;
+          border-radius: 34px;
+          overflow: hidden;
+          background: transparent;
+          .ant-segmented-item {
+            display: flex;
+            height: 58px;
+            justify-content: center;
+            align-items: center;
+            color: var(--Light-Black);
+            text-align: center;
+            font-family: var(--main-font-family);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border-radius: 29px;
+            &.ant-segmented-item-selected {
+              color: #206aff;
+              flex-shrink: 0;
+              background: #fff;
+              box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            }
+          }
+        }
+      }
+    }
+  }
+}

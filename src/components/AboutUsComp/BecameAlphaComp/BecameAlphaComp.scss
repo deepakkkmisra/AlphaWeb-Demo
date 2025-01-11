@@ -1,0 +1,52 @@
+.becameAlphaCompContainer {
+  .becameAlphaCompWrapper {
+    padding: 16px 20px 64px 20px;
+    background: #03001f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    .descBox {
+      h2 {
+        color: var(--White);
+        text-align: center;
+        font-family: var(--header-font-family);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 60px; /* 120% */
+        letter-spacing: -0.5px;
+
+        @media only screen and (max-width: 700px) {
+          font-size: 30px;
+          line-height: normal; /* 120% */
+        }
+      }
+      p {
+        color: var(--White);
+        text-align: center;
+        font-family: var(--main-font-family);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px; /* 214.286% */
+        text-transform: none;
+        letter-spacing: 0.5px;
+        max-width: 830px;
+      }
+    }
+    .redirectBtns {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+
+      @media only screen and (max-width: 600px) {
+        flex-direction: column;
+      }
+      button {
+        max-width: 247px;
+      }
+    }
+  }
+}

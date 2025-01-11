@@ -1,0 +1,175 @@
+.visionCompContainer {
+  background: #03001f;
+  color: #fff;
+  .visionCompWrapper {
+    display: flex;
+    align-items: center;
+    padding: 100px 20px 32px 20px;
+    justify-content: center;
+    gap: 20px;
+
+    @media only screen and (max-width: 850px) {
+      flex-direction: column;
+    }
+
+    .leftSection {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 570px;
+
+      @media only screen and (max-width: 850px) {
+        text-align: center;
+      }
+
+      p {
+        color: #2069ff;
+        text-align: left;
+        font-family: var(--main-font-family);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px; /* 214.286% */
+        text-transform: uppercase;
+        @media only screen and (max-width: 850px) {
+          text-align: center;
+        }
+      }
+      h3 {
+        color: var(--White);
+        text-align: left;
+        font-family: var(--header-font-family);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 60px; /* 120% */
+        letter-spacing: -0.5px;
+        @media only screen and (max-width: 850px) {
+          text-align: center;
+        }
+
+        @media only screen and (max-width: 600px) {
+          font-size: 30px;
+        }
+      }
+      h6 {
+        color: var(--White);
+        text-align: left;
+        font-family: var(--header-font-family);
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.5px;
+        margin-bottom: 20px;
+        @media only screen and (max-width: 850px) {
+          text-align: center;
+        }
+
+        @media only screen and (max-width: 600px) {
+          font-size: 20px;
+        }
+      }
+      p:last-of-type {
+        color: var(--White);
+        text-align: left;
+        font-family: var(--main-font-family);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 214.286% */
+        text-transform: none;
+        letter-spacing: 0.5px;
+        @media only screen and (max-width: 850px) {
+          text-align: center;
+        }
+      }
+    }
+
+    .rightSection {
+      width: 100%;
+      max-width: 470px;
+      @media only screen and (max-width: 1280px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: fit-content;
+      }
+      @media only screen and (max-width: 850px) {
+        align-items: center;
+        margin-top: 30px;
+      }
+      .firstVersion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        img {
+          max-width: 269.875px;
+          max-height: 103.125px;
+          margin-bottom: 20px;
+        }
+        p {
+          color: var(--White);
+          text-align: center;
+          font-size: 15px;
+        }
+        p:first-of-type {
+          text-align: center;
+          font-family: var(--header-font-family);
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: -0.26px;
+        }
+        p:last-of-type {
+          text-align: center;
+          font-family: var(--main-font-family);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal; /* 214.286% */
+        }
+
+        @media only screen and (max-width: 1280px) {
+          width: fit-content;
+          padding: 0 15px;
+        }
+      }
+
+      .secondVersion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          max-width: 301.365;
+          max-height: 277.521px;
+        }
+        p {
+          color: var(--White);
+          text-align: center;
+          font-size: 15px;
+        }
+        p:first-of-type {
+          text-align: center;
+          font-family: var(--header-font-family);
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: -0.26px;
+        }
+        p:last-of-type {
+          text-align: center;
+          font-family: var(--main-font-family);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal; /* 214.286% */
+        }
+        @media only screen and (max-width: 1280px) {
+          width: fit-content;
+        }
+      }
+    }
+  }
+}

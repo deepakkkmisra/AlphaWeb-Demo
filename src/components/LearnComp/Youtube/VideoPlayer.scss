@@ -1,0 +1,154 @@
+.vp_wrapper {
+    border-radius: 20px;
+    background: #edf2fa;
+    display: flex;
+    max-width: 1054px;
+    margin: 40px auto 100px auto;
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.videobox_wrapper{
+width: 100%;
+display: flex;
+position: relative;
+border-top: 1px solid #B4B9C1;
+padding: 10px 0;
+.arrow_right{
+    position: absolute;
+    right: -6px;
+    z-index: 111;
+    top: 74px; 
+}
+.arrow_left{
+    position: absolute;
+    left: -6px;
+    z-index: 111;
+    top: 74px; 
+}
+}
+  
+.videobox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+
+    p{
+        color: #02081B;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 23px; /* 143.75% */  
+    }
+    .videobox_img{
+    img{
+      border-radius: 20px;
+    }
+  }
+  .playIcon{
+    height: 39px;
+    width: 39px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+  }
+}
+
+
+  .vp_player {
+    width: 100%;
+    margin-bottom: 20px;
+    .vp_desc{
+        color: var(--Text, #131217);
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 34px; /* 141.667% */
+    }
+  }
+  
+  .video {
+    width: 100%;
+    border-radius: 20px;
+    height: auto;
+  }
+  
+  .vp_placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: #f0f0f0;
+    color: #777;
+  }
+  
+  .vp_options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .vp_option {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .vp_option:hover {
+    background-color: #0056b3;
+  }
+  
+  .video-thumbnail {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .video-thumbnail:hover {
+    transform: scale(1.05);
+  }
+  
+  .video-thumbnail-img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .iframe-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; 
+    overflow: hidden;
+    border-radius: 20px; 
+  
+    .video-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px; 
+    }
+  }
+  

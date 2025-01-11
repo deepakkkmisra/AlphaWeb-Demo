@@ -1,0 +1,116 @@
+.blogdetails_wrapper{
+    @media screen and (max-width: 1440px) {
+        max-width: 90%;
+        margin: auto;
+        }
+    .blogdetails_intro{
+        max-width: 912px;
+        margin: 100px auto auto auto;
+        p{
+            color: #2069FF;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px; /* 214.286% */
+            text-transform: uppercase; 
+        }
+        h1{
+            color: var(--Text, #131217);
+            text-align: center;
+            font-family: "Clash Display";
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 60px; /* 120% */ 
+        }
+    }
+    .blogdetails_content{
+        max-width: 1181px;
+        margin: 100px auto auto auto;
+        h1{
+            color: var(--new-text, #010310);
+            font-family: "Clash Display";
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;  
+        }
+       
+        p{
+            text-align: justify;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px; /* 214.286% */  
+        }
+
+        .blogcontent{
+            h3{
+                text-align: justify;
+                font-family: Montserrat;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px; /* 214.286% */                 
+                color: #010310;
+            } 
+            h2{
+                text-align: justify;
+                font-family: Montserrat;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px; /* 214.286% */                 
+                color: #010310;
+            } 
+            h4{
+                text-align: justify;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px; /* 214.286% */  
+                margin: 14px 0px;
+            }
+            h1{
+                margin: 14px 0px;
+            }
+           .bold-heading{
+            font-weight: 700;
+            margin-top: 14px;
+            margin-bottom: 16px;
+           }
+           .blog1_p{
+            margin-bottom: 8px;
+           }
+           h2{
+            margin: 14px 0px;
+           }
+            ul{
+                padding-left: 40px;
+                span{
+                    text-align: justify;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 30px; /* 214.286% */  
+                }
+                li{
+                    list-style-type:disc;
+                }
+            }
+        }
+    }
+}
+
+
+.blogImg_main{
+    img{
+        margin: auto auto 40px auto;
+        border-radius: 10px;
+    }
+}

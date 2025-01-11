@@ -1,0 +1,107 @@
+.disclaimerContainer {
+  display: flex;
+  width: 100%;
+  padding: 100px 100px;
+  @media only screen and (max-width: 1100px) {
+    padding: 50px 50px;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 20px 20px;
+  }
+
+  .disclaimerWrapper {
+    max-width: 1120px;
+    .disclaimerTitle {
+      color: #2069ff;
+      font-family: var(--header-font-family);
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 30px;
+      text-transform: uppercase;
+      @media only screen and (max-width: 1000px) {
+        font-size: 25px;
+      }
+      @media only screen and (max-width: 600px) {
+        font-size: 20px;
+      }
+    }
+
+    .lastUpdated {
+      font-family: var(--header-font-family);
+      font-size: 20px;
+      margin-top: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.26px;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 15px;
+      }
+    }
+
+    .disclaimerOptionsSection {
+      gap: 50px;
+      display: flex;
+      flex-direction: column;
+      @media only screen and (max-width: 600px) {
+        gap: 40px;
+      }
+    }
+    .disclaimerTypes {
+      list-style: disc !important;
+      padding-left: 15px;
+      margin-top: 20px;
+      li {
+        font-family: var(--main-font-family);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        margin-bottom: 2.5px;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+          text-underline-offset: 4px;
+        }
+        @media only screen and (max-width: 600px) {
+          font-size: 15px;
+        }
+      }
+    }
+    .detailedDisclaimer {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      @media only screen and (max-width: 600px) {
+        gap: 30px;
+      }
+      .disclaimerSection {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        @media only screen and (max-width: 600px) {
+          gap: 15px;
+        }
+
+        .sectionHeading {
+          font-family: var(--main-font-family);
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          @media only screen and (max-width: 600px) {
+            font-size: 15px;
+          }
+        }
+
+        .sectionContent {
+          font-family: var(--main-font-family);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 25px; /* 214.286% */
+        }
+      }
+    }
+  }
+}

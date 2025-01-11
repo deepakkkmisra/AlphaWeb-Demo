@@ -1,0 +1,55 @@
+.wf_wrapper {
+  h1 {
+    color: #010310;
+    font-family: "Clash Display";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px; /* 120% */
+    letter-spacing: -0.5px;
+    max-width: 625px;
+    @media only screen and (max-width: 500px) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+  .fb_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 40px auto 80px auto;
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 100%;
+    }
+    .fb {
+      border-radius: 20px;
+      background: #edf2fa;
+      display: flex;
+      padding: 40px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+
+      @media screen and (max-width: 800px) {
+        padding: 20px;
+      }
+      h2 {
+        color: #131217;
+        font-family: "Clash Display";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.3px;
+      }
+      p {
+        color: var(--new-text, #010310);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 214.286% */
+      }
+    }
+  }
+}

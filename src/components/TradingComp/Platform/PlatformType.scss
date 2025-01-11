@@ -1,0 +1,156 @@
+.pt_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1183px;
+    width: 100%;
+    margin: auto;
+    padding: 80px;
+    grid-gap: 40px;
+    border-radius: 30px;
+    background: var(--new-dark-gradient, linear-gradient(90deg, #010310 0%, #040c41 100%));
+    grid-auto-flow: dense;
+    @media (max-width: 1350px) {
+    max-width: 90%;
+    }
+    @media (max-width: 800px) {
+        grid-template-columns: repeat(1 , 1fr);
+        padding: 20px;
+    }
+    @media (min-width: 1000px) {
+    
+    
+    &:nth-child(2n + 2)>div:first-child {
+        grid-column: 2;
+      }
+    }
+     
+    .pt_left {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        > div {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .pt_list_items {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    h1 {
+        color: var(--White, #fff);
+        font-family: "Clash Display";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%; /* 40px */
+        text-transform: capitalize;
+    }
+    p {
+        color: var(--new-light-bg, #edf2fa);
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; /* 178.571% */
+    }
+    h3 {
+        color: var(--White, #fff);
+        leading-trim: both;
+        text-edge: cap;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 180%; /* 43.2px */
+    }
+    span {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 180%; /* 27px */
+    }
+    .pt_right {
+        position: relative;
+        width: 100%; 
+        height: 100%;   
+        .img_wrapper{
+            width: 100%; 
+            height: 100%;   
+            img{
+                height: 100%;
+            }
+   
+        }
+        @media (max-width: 1000px) {
+           min-height: 400px;
+
+        }
+        .download_btns_wrapper {
+            border-radius: 30px;
+            background: #fff;
+            box-shadow: 0px 6px 15px 0px rgba(175, 177, 190, 0.5);
+            display: flex;
+            max-width: 463.175px;
+            width: 100%;
+            padding: 30px 20px;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            position: absolute;
+            right: 19px;
+            bottom: 0px;
+            @media (max-width: 1000px) {
+            flex-wrap: wrap;
+            right: 0;
+            }
+            @media (max-width: 800px) {
+             flex-direction: column;
+            }
+            h2 {
+                color: var(--Light-paragraph, #696a7b);
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 180%; /* 27px */
+            }
+            .btns {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 7px;
+                button {
+                    border: none;
+                    outline: none;
+                    border-radius: 10px;
+                    background: var(--new-brand, #2069ff);
+                    display: flex;
+                    padding: 10px 20px;
+                    align-items: center;
+                    gap: 7px;
+                    width: fit-content;
+                    color: #fff;
+                    leading-trim: both;
+                    text-edge: cap;
+                    font-family: Montserrat;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 180%; /* 27px */
+                }
+            }
+        }
+    }
+}

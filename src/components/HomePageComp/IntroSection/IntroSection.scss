@@ -1,0 +1,204 @@
+.introSectionContainer {
+  background: var(--White);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 118px;
+
+  @media only screen and (max-width: 1200px) {
+    padding: 40px 20px;
+  }
+
+  .introSectionWrapper {
+    .topSectionIntro {
+      .title {
+        color: var(--brand-theme-color);
+        text-align: center;
+        font-family: var(--main-font-family);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+      }
+      .motto {
+        color: #010310;
+        text-align: center;
+        font-family: var(--header-font-family);
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 60px;
+        letter-spacing: -0.5px;
+        span {
+          background: var(
+            --GRADIENT,
+            linear-gradient(
+              90deg,
+              #1f69ff 51.41%,
+              #05328d 68.28%,
+              #1f93ff 85.89%,
+              #1f69ff 101.03%
+            )
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        @media only screen and (max-width: 719px) {
+          font-size: 50px;
+          display: flex;
+          flex-direction: column;
+        }
+        @media only screen and (max-width: 450px) {
+          font-size: 30px;
+          line-height: 39px;
+          span {
+            font-size: 30px;
+            line-height: 39px;
+          }
+        }
+      }
+      .stats {
+        color: var(--Light-Black);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        padding-bottom: 30px;
+        max-width: 834px;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+
+    .midSectionIntro {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding-bottom: 20px;
+
+      @media only screen and (max-width: 630px) {
+        flex-direction: column;
+      }
+      button {
+        &:first-child {
+          max-width: 245px;
+        }
+        &:last-child {
+          max-width: 235px;
+        }
+      }
+    }
+
+    .bottomSectionIntro {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px 0;
+      padding-bottom: 20px;
+      gap: 10px;
+      .ratingsBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        p {
+          color: var(--Light-Black);
+          text-align: center;
+          font-family: var(--main-font-family);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          letter-spacing: -0.21px;
+        }
+        svg:first-of-type {
+          cursor: pointer;
+        }
+      }
+
+      .statsBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        flex-wrap: wrap;
+        .statDiv {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: 0 21px;
+          border-right: 1px solid;
+          border-image: linear-gradient(
+              90deg,
+              #1f69ff 51.41%,
+              #05328d 68.28%,
+              #1f93ff 85.89%,
+              #1f69ff 101.03%
+            )
+            1;
+          height: 78px;
+
+          &:last-child {
+            border: 0;
+          }
+
+          @media only screen and (max-width: 450px) {
+            min-width: 170px;
+            border: 0;
+          }
+          @media only screen and (max-width: 380px) {
+            width: 100%;
+            border-bottom: 1px solid;
+            border-image: linear-gradient(
+                90deg,
+                #1f69ff 51.41%,
+                #05328d 68.28%,
+                #1f93ff 85.89%,
+                #1f69ff 101.03%
+              )
+              1;
+          }
+
+          .statNum {
+            background: var(
+              --Gradient,
+              linear-gradient(
+                90deg,
+                #1f69ff 51.41%,
+                #05328d 68.28%,
+                #1f93ff 85.89%,
+                #1f69ff 101.03%
+              )
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #1f69ff;
+            font-family: "Clash Display", Sans-serif;
+            font-size: 28px !important;
+            font-weight: 400;
+            line-height: 34.44px;
+            span {
+              font-size: 28px !important;
+            }
+          }
+          .statLabel {
+            color: var(--Black);
+            font-family: var(--main-font-family);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17.07px;
+          }
+        }
+      }
+    }
+  }
+}

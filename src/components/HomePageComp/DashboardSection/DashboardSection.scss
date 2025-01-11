@@ -1,0 +1,245 @@
+.dashboardSectionContainer {
+  .dashboardSectionWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 80px 20px;
+    .topHeaderSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        color: #1f69ff;
+        text-align: center;
+        font-family: var(--main-font-family);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px; /* 214.286% */
+        text-transform: uppercase;
+      }
+
+      h3 {
+        color: var(--Light-Black);
+        text-align: center;
+        font-family: var(--header-font-family);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 60px; /* 150% */
+        letter-spacing: -0.4px;
+        max-width: 980px;
+        margin-bottom: 40px;
+
+        @media only screen and (max-width: 850px) {
+          font-size: 30px;
+          line-height: normal;
+        }
+        @media only screen and (max-width: 600px) {
+          font-size: 25px;
+          line-height: normal;
+        }
+      }
+    }
+
+    .dashboardDetailSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      .detailBox {
+        border-radius: 10px;
+        background: #edf2fa;
+        overflow: hidden;
+      }
+      .topDetailSection {
+        display: flex;
+        align-items: stretch;
+        max-width: 1155px;
+        gap: 5px;
+
+        @media only screen and (max-width: 1260px) {
+          flex-direction: column;
+          width: 100%;
+        }
+
+        p {
+          font-family: var(--main-font-family);
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 28px; /* 140% */
+          background: var(
+            --Gradient,
+            linear-gradient(
+              90deg,
+              #1f69ff 51.41%,
+              #05328d 68.28%,
+              #1f93ff 85.89%,
+              #1f69ff 101.03%
+            )
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        .firstDetail {
+          padding-left: 50px;
+          padding-top: 50px;
+          display: flex;
+          flex-direction: column;
+          gap: 17px;
+          max-height: 501px;
+          @media only screen and (max-width: 1260px) {
+            align-items: center;
+            padding: 20px !important;
+          }
+          p {
+          }
+
+          img {
+            border-radius: 10.383px;
+            min-height: 400px;
+            min-width: 740px;
+            @media only screen and (max-width: 1260px) {
+              min-width: auto;
+            }
+          }
+        }
+
+        .secondDetail {
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          padding-left: 50px;
+          padding-top: 50px;
+          padding-bottom: 50px;
+          @media only screen and (max-width: 1260px) {
+            align-items: center;
+            padding: 20px !important;
+          }
+          .accntAnalysisImages {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            @media only screen and (max-width: 1260px) {
+              width: 100%;
+              justify-items: center;
+              grid-template-columns: repeat(auto-fit, minmax(189px, 1fr));
+            }
+            img {
+              min-width: 189px;
+              height: 95.877px;
+              border-radius: 8px;
+              @media only screen and (max-width: 1260px) {
+                min-width: auto;
+              }
+            }
+          }
+          p {
+            margin-bottom: 36px;
+            max-width: 196px;
+
+            @media only screen and (max-width: 1260px) {
+              max-width: 100%;
+            }
+          }
+
+          img {
+          }
+        }
+      }
+
+      .bottomDetailSection {
+        display: flex;
+        align-items: stretch;
+        max-width: 1155px;
+        width: 100%;
+        gap: 5px;
+
+        @media only screen and (max-width: 1260px) {
+          flex-direction: column;
+        }
+
+        p {
+          font-family: var(--main-font-family);
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 28px; /* 140% */
+          background: var(
+            --Gradient,
+            linear-gradient(
+              90deg,
+              #1f69ff 51.41%,
+              #05328d 68.28%,
+              #1f93ff 85.89%,
+              #1f69ff 101.03%
+            )
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        .thirdDetail {
+          width: 100%;
+          max-width: 870px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 50px;
+          gap: 20px;
+          @media only screen and (max-width: 1260px) {
+            align-items: center;
+          }
+          @media only screen and (max-width: 500px) {
+            padding: 25px 20px;
+          }
+          .detailImagesBox {
+            max-width: 770px;
+            height: 278px;
+            img {
+              height: 278px;
+              border-radius: 10.657px;
+            }
+          }
+          p {
+          }
+        }
+
+        .fourthDetail {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          max-width: 286px;
+          padding: 50px 0 60px 20px;
+          justify-content: space-between;
+
+          @media only screen and (max-width: 1260px) {
+            max-width: 100%;
+            align-items: center;
+          }
+
+          p {
+            max-width: 150px;
+            @media only screen and (max-width: 1260px) {
+              max-width: 100%;
+              margin-bottom: 20px;
+            }
+          }
+
+          img {
+            min-width: 470px;
+            height: 320px;
+
+            @media only screen and (max-width: 1260px) {
+              min-width: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

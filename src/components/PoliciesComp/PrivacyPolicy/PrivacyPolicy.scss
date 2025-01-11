@@ -1,0 +1,120 @@
+.privacyPolicyContainer {
+  width: 100%;
+  padding: 100px 100px;
+  @media only screen and (max-width: 1100px) {
+    padding: 50px 50px;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 20px 20px;
+  }
+
+  .privacyPolicyWrapper {
+    max-width: 1235px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    flex-direction: column;
+
+    .headerSection {
+      h3 {
+        color: #2069ff;
+        font-family: var(--header-font-family);
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        @media only screen and (max-width: 1000px) {
+          font-size: 25px;
+        }
+        @media only screen and (max-width: 600px) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .privacyPoliciesDetail {
+      p {
+        font-family: var(--main-font-family);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+      }
+    }
+
+    .websiteInfo {
+      p {
+        font-family: var(--main-font-family);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+      }
+    }
+
+    .referingDetails {
+      p {
+        font-family: var(--main-font-family);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+      }
+    }
+
+    .servicesSection {
+      p {
+        font-family: var(--main-font-family);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+      }
+    }
+
+    .privacyNotice {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      p {
+        font-family: var(--main-font-family);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+      }
+
+      .questionsList {
+        list-style: disc !important;
+        padding-left: 15px;
+        li {
+          font-family: var(--main-font-family);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          cursor: pointer;
+          margin-bottom: 3.5px;
+
+          &:hover {
+            text-decoration: underline;
+            text-underline-offset: 4px;
+          }
+        }
+      }
+
+      .answersToTheQuestion {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+
+        .privacyQuestion {
+          font-family: var(--header-font-family);
+          font-size: 20px;
+          margin-top: 20px;
+          font-style: normal;
+          font-weight: 500;
+        }
+
+        .privacyAnswer {
+          /* Styles for the privacy answer text */
+        }
+      }
+    }
+  }
+}

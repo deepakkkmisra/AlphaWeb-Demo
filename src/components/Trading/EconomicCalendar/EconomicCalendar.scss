@@ -1,0 +1,92 @@
+.economicCalendarMainWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+  padding: 100px;
+  @media only screen and (max-width: 1100px) {
+    padding: 50px 50px;
+    gap: 80px;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 20px 20px;
+    gap: 40px;
+  }
+  .economicCalendarTopSection {
+    max-width: 980px;
+    width: 100%;
+    p {
+      color: #206aff;
+      text-align: center;
+      font-family: var(--main-font-family);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 30px;
+    }
+    .economicCalendarTitleSection {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h3 {
+        color: #010310;
+        text-align: center;
+        font-family: var(--header-font-family);
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.5px;
+        @media only screen and (max-width: 800px) {
+          font-size: 30px;
+        }
+
+        span {
+          background: var(
+            --GRADIENT,
+            linear-gradient(
+              90deg,
+              #1f69ff 51.41%,
+              #05328d 68.28%,
+              #1f93ff 85.89%,
+              #1f69ff 101.03%
+            )
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-family: var(--header-font-family);
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          letter-spacing: -0.5px;
+          @media only screen and (max-width: 800px) {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    .economicCalendarInfo {
+      color: var(--new-text, #010310);
+      text-align: center;
+      font-family: var(--main-font-family);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 214.286% */
+    }
+  }
+
+  .calendarSection {
+    iframe {
+      width: 90vw;
+      height: 80vh;
+      body {
+        background: #fff;
+        color: #000;
+      }
+    }
+  }
+}

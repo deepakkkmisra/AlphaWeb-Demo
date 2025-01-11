@@ -1,0 +1,127 @@
+.leaderboard_table_container {
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  border-radius: 8px;
+  overflow: auto;
+
+  .leaderboard_table_wrapper {
+    width: 100%;
+    max-width: 100%;
+
+    @media only screen and (max-width: 1000px) {
+      min-width: 100vw;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 10px;
+    }
+
+    thead {
+      width: 100%;
+      display: table;
+      table-layout: fixed;
+      height: 70px;
+
+      tr {
+        background: #0d164e;
+      }
+    }
+
+    tbody {
+      width: 100%;
+      display: block;
+      table-layout: fixed;
+      transition: all 0.3s ease-in-out;
+      tr {
+        background-color: #fff;
+        margin-bottom: 10px;
+      }
+
+      &.leaderboardVisible {
+        backdrop-filter: none;
+      }
+
+      &.leaderboardHidden {
+        position: relative;
+        z-index: 1;
+
+        opacity: 0.8;
+        pointer-events: none;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(1, 3, 16, 0.1);
+          backdrop-filter: blur(6px);
+          z-index: 2;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    th,
+    td {
+      text-align: center;
+      border: none;
+      color: var(--Light-Black);
+      font-family: var(--main-font-family);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      box-sizing: border-box;
+      width: 100%;
+      min-width: 200px;
+    }
+
+    th {
+      color: #fff;
+      font-size: 16px;
+      text-transform: capitalize;
+    }
+
+    tr {
+      border-radius: 10px;
+
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+      height: 70px;
+    }
+
+    tr:first-child th:first-child,
+    td:first-child {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    tr:first-child th:last-child,
+    td:last-child {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+
+  .pagination {
+    button {
+      color: #fff !important;
+    }
+    svg {
+      fill: #fff !important;
+    }
+
+    .Mui-selected {
+      background: #2069ff !important;
+    }
+
+    .MuiPaginationItem-root {
+      color: #fff !important;
+    }
+  }
+}

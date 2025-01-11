@@ -1,0 +1,37 @@
+.certificateCompContainer {
+  .certificateCompWrapper {
+    background: #03001f;
+    padding: 30px 20px;
+    .certificateSection {
+      // .splide {
+      //   margin: 0 auto;
+      //   width: 90%;
+      //   display: flex;
+      //   justify-content: center;
+      // }
+
+      .splide__slide {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        opacity: 0.5;
+        // transform: scale(0);
+
+        @media only screen and (max-width: 800px) {
+          img {
+            width: 92%;
+          }
+        }
+      }
+
+      .splide__slide.is-active {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      .splide__slide.is-prev,
+      .splide__slide.is-next {
+        transform: scale(0.9);
+        opacity: 0.8;
+      }
+    }
+  }
+}

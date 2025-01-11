@@ -1,0 +1,129 @@
+.termsOfUseWrapper {
+  padding: 100px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  @media only screen and (max-width: 1100px) {
+    padding: 50px 50px;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 20px 20px;
+  }
+}
+.termsAndCondition {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  @media only screen and (max-width: 600px) {
+    padding-left: 20px;
+  }
+}
+
+.headerSection {
+  h3 {
+    color: #2069ff;
+    font-family: var(--header-font-family);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    @media only screen and (max-width: 1000px) {
+      font-size: 25px;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: 20px;
+    }
+  }
+}
+
+.headerSection h3 {
+}
+
+.headerPoints {
+  padding-left: 40px;
+  ul {
+    list-style: disc !important;
+    li {
+      font-family: var(--main-font-family);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      cursor: pointer;
+      margin-bottom: 2.5px;
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+      @media only screen and (max-width: 600px) {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+.headerPoints p {
+}
+
+/* Detailed Answers Section */
+.detailedAnswers {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @media only screen and (max-width: 800px) {
+    gap: 30px;
+  }
+}
+
+.setOfQuestionsAnswers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  p {
+    font-family: var(--main-font-family);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    @media only screen and (max-width: 800px) {
+      font-size: 15px;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    gap: 15px;
+  }
+  .toRememberList {
+    ul {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      list-style: circle;
+    }
+    @media only screen and (max-width: 600px) {
+      padding-left: 20px;
+    }
+  }
+}
+
+.questionsSection {
+  font-family: var(--main-font-family);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.answerSection {
+  font-family: var(--main-font-family);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  @media only screen and (max-width: 800px) {
+    font-size: 15px;
+  }
+  span {
+    font-family: var(--main-font-family);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,369 @@
+.ps_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 232px;
+  @media only screen and (max-width: 600px) {
+    gap: 200px;
+  }
+  .ps_intro {
+    max-width: 856px;
+    width: 100%;
+    margin: 100px auto auto auto;
+  }
+  h1 {
+    color: #000;
+    text-align: center;
+    font-family: "Clash Display";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 53px; /* 106% */
+    letter-spacing: -0.5px;
+    @media only screen and (max-width: 380px) {
+      font-size: 48px;
+    }
+    span {
+      @media only screen and (max-width: 380px) {
+        font-size: 30px;
+      }
+    }
+  }
+  p {
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 214.286% */
+  }
+  .plan_select {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    p {
+      color: #010310;
+      text-align: center;
+      font-family: "Clash Display";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 100%; /* 20px */
+      text-transform: capitalize;
+    }
+    .plan_btns {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      button {
+        border-radius: 20px;
+        border: 2px solid #ced3db;
+        background: #edf2fa;
+        display: flex;
+        width: 270px;
+        padding: 20px 40px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: var(--Text, #131217);
+        font-family: "Clash Display";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px; /* 140% */
+        &.selected {
+          border-radius: 20px;
+          border: 2px solid var(--button-gradient, #2069ff);
+          background: #fff;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.plansTable_wrapper {
+  max-width: 1240px;
+  width: 100%;
+
+  @media only screen and (max-width: 1270px) {
+    // padding: 20px;
+  }
+
+  .plans_table {
+    border-radius: 30px;
+    width: 100%;
+    border: 1px solid var(--button-gradient, #2069ff);
+    background: #fff;
+    display: inline-flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 100px;
+    position: relative;
+    @media only screen and (max-width: 600px) {
+      padding: 15px;
+      padding-top: 100px;
+    }
+
+    .table_header {
+      padding-left: 50px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      .table_head {
+        color: #010310;
+        font-family: "Clash Display";
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 100%; /* 20px */
+        text-transform: capitalize;
+        @media only screen and (max-width: 900px) {
+          min-width: 225px;
+          width: 100%;
+        }
+      }
+    }
+
+    .table_rows {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .table_row_white {
+        background-color: #fff !important;
+      }
+      .table_row {
+        padding-left: 50px;
+        border-radius: 55px;
+        height: 50px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background: #edf2fa;
+        cursor: pointer;
+
+        @media only screen and (max-width: 900px) {
+          width: fit-content;
+        }
+
+        .table_row_data {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          color: #010310;
+          font-family: var(--main-font-family);
+          font-size: 16px;
+          font-weight: 400;
+          text-transform: capitalize;
+          @media only screen and (max-width: 900px) {
+            min-width: 225px;
+            width: 100%;
+          }
+        }
+
+        .arrow-icon {
+          transition: transform 0.3s;
+        }
+
+        .expanded {
+          transform: rotate(180deg);
+        }
+      }
+
+      .table_expanded_row {
+        width: 100%;
+        margin-top: 5px;
+      }
+
+      .table_expanded_row p {
+        color: #010310;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 20.8px */
+        text-transform: capitalize;
+      }
+    }
+    .table_footer {
+      padding: 0 35px;
+      width: 100%;
+      border-radius: 20px;
+      background: var(
+        --Linear,
+        linear-gradient(90deg, #020411 0%, #050d42 100%)
+      );
+      height: 91px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media only screen and (max-width: 650px) {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        height: 100px;
+      }
+      h3 {
+        color: #fff;
+        font-family: "Clash Display";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%; /* 20px */
+        text-transform: capitalize;
+      }
+      button {
+        max-width: 361px;
+        background-position: -397px;
+
+        &:hover {
+          background-position: 0 !important;
+          img {
+            filter: brightness(30);
+          }
+        }
+
+        @media only screen and (max-width: 450px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .planDetails_wrapper {
+    position: absolute;
+    top: -174px;
+    // left: 18%;
+    border-radius: 30px;
+    border: 2px solid var(--button-gradient, #2069ff);
+    background: #edf2fa;
+    box-shadow: 0px 4px 30px 0px rgba(1, 27, 81, 0.33);
+    display: inline-flex;
+    padding: 30px 40px 40px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 232px;
+    max-width: 800px;
+    width: 100%;
+
+    @media only screen and (max-width: 1000px) {
+      max-width: 700px;
+    }
+    @media only screen and (max-width: 800px) {
+      max-width: 600px;
+      padding: 20px;
+    }
+    @media only screen and (max-width: 600px) {
+      gap: 5px;
+      height: fit-content;
+      padding: 10px;
+      top: -135px;
+      width: fit-content;
+    }
+    @media only screen and (max-width: 450px) {
+      top: -160px;
+    }
+    .plan_highlights {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      @media only screen and (max-width: 700px) {
+        display: flex;
+        /* flex-direction: column; */
+        gap: 10px;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+      }
+      > div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+    .plan_name {
+      display: flex;
+      align-items: center;
+      gap: 19px;
+    }
+    span {
+      font-family: "Clash Display";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px; /* 200% */
+    }
+    h3 {
+      color: var(--Text, #131217);
+      font-family: "Clash Display";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px; /* 140% */
+    }
+    p {
+      color: var(--Text, #131217);
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 180%; /* 27px */
+      letter-spacing: -0.15px;
+      @media only screen and (max-width: 700px) {
+        font-size: 13px;
+        max-width: 300px;
+      }
+    }
+  }
+  .tableWrapper {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    .tableBox {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      @media only screen and (max-width: 900px) {
+        overflow: auto;
+      }
+    }
+  }
+  .bestseller {
+    border-radius: 19px;
+    background: var(
+      --GRADIENT-2,
+      linear-gradient(0deg, #020411 41.53%, #050d42 97.84%)
+    );
+    display: flex;
+    height: 20px;
+    padding: 0px 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--White, #fff);
+    text-align: center;
+    font-family: "Clash Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 185.714% */
+  }
+}

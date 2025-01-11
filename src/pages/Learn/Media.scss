@@ -1,0 +1,140 @@
+.media_wrapper {
+    max-width: 1180px;
+    margin: auto;
+    @media screen and (max-width: 1440px) {
+        max-width: 90%;
+        margin: auto;
+        }
+     /* Responsive design for .media_intro */
+  .media_intro {
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+
+    .into_head {
+      color: #206aff;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 30px; /* 214.286% */
+    }
+
+    h1 {
+      color: #010310;
+      text-align: center;
+      font-family: "Clash Display";
+      font-size: 50px;
+      font-weight: 600;
+      line-height: 60px; /* 120% */
+      letter-spacing: -0.5px;
+    }
+
+    p {
+      color: var(--new-text, #010310);
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 30px; /* 214.286% */
+    }
+  }
+
+  /* Social Media Wrapper */
+  .social_media_wrapper {
+    margin: auto auto 80px auto;
+  }
+
+  /* Responsive Adjustments */
+  /* For screens below 1440px */
+  @media screen and (max-width: 1440px) {
+    .media_intro {
+      margin: 80px auto;
+      padding: 0 20px; /* Add padding to avoid content overflow */
+      h1 {
+        font-size: 40px;
+        line-height: 50px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 28px; /* Slightly smaller line height */
+      }
+    }
+  }
+
+  /* For screens below 1200px */
+  @media screen and (max-width: 1200px) {
+    .media_intro {
+      margin: 60px auto;
+      padding: 0 15px;
+      h1 {
+        font-size: 38px;
+        line-height: 48px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  /* For screens below 1000px */
+  @media screen and (max-width: 1000px) {
+    .media_intro {
+      margin: 40px auto;
+      padding: 0 15px;
+      h1 {
+        font-size: 30px;
+        line-height: 40px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 26px;
+      }
+    }
+
+    .social_media_wrapper {
+      margin-bottom: 60px;
+    }
+  }
+
+  /* For screens below 768px (tablets and smaller devices) */
+  @media screen and (max-width: 768px) {
+    .media_intro {
+      margin: 30px auto;
+      padding: 0 10px;
+      h1 {
+        font-size: 28px;
+        line-height: 36px;
+      }
+      p {
+        font-size: 13px;
+        line-height: 24px;
+      }
+    }
+
+    .social_media_wrapper {
+      margin-bottom: 50px;
+    }
+  }
+
+  /* For very small screens (below 480px) */
+  @media screen and (max-width: 480px) {
+    .media_intro {
+      margin: 20px auto;
+      padding: 0 10px;
+      h1 {
+        font-size: 24px;
+        line-height: 32px;
+      }
+      p {
+        font-size: 12px;
+        line-height: 22px;
+      }
+    }
+
+    .social_media_wrapper {
+      margin-bottom: 40px;
+    }
+  }
+}

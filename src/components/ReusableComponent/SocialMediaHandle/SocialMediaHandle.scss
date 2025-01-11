@@ -1,0 +1,170 @@
+.socialMediaHandle {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  @media only screen and (max-width: 780px) {
+    gap: 20px;
+  }
+  h3 {
+    color: #010310;
+    text-align: center;
+    font-family: var(--header-font-family);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px; /* 120% */
+    letter-spacing: -0.5px;
+
+    @media only screen and (max-width: 780px) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+  span {
+    background: var(
+      --GRADIENT,
+      linear-gradient(
+        90deg,
+        #1f69ff 51.41%,
+        #05328d 68.28%,
+        #1f93ff 85.89%,
+        #1f69ff 101.03%
+      )
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--header-font-family);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -0.5px;
+    @media only screen and (max-width: 780px) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+  .socialMediaAccounts {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    .socialAccount {
+      border-radius: 20px;
+      background: #edf2fa;
+      display: flex;
+      padding: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      flex: 1 0 0;
+      max-width: 220px;
+      width: 100%;
+      max-height: 200px;
+      gap: 20px;
+      position: relative;
+      cursor: pointer;
+
+      @media only screen and (max-width: 780px) {
+        max-width: 180px;
+        min-height: 200px;
+      }
+
+      @media only screen and (max-width: 470px) {
+        max-width: 220px;
+        min-height: 200px;
+      }
+      .socialMedia_title {
+        min-width: 200px;
+        width: 100%;
+        min-height: 200px;
+        display: flex;
+        p {
+          color: var(--Text, #131217);
+          text-align: center;
+          font-family: var(--header-font-family);
+          font-size: 26px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+      // .socialMediaLogo {
+      //   position: absolute;
+      //   filter: brightness(0.5);
+      //   top: 56px;
+      //   right: 0px;
+      // }
+    }
+    .instagram_account {
+      background-image: url(../../../assets/icons/instaBgIcon.svg);
+      &:hover {
+        background: transparent;
+        .socialMediaLogo {
+          display: none !important;
+        }
+        background-image: url(../../../assets/icons/instaHover.svg);
+      }
+    }
+    .twitter_account {
+      &:hover {
+        background: transparent;
+        background-image: url(../../../assets/icons/TwitterHoverImg.svg);
+        .socialMediaLogo {
+          display: none !important;
+        }
+
+        p {
+          color: white;
+        }
+      }
+
+      .socialMediaLogo {
+        position: absolute;
+        filter: brightness(0.5);
+        top: 41px;
+        right: 0px;
+      }
+    }
+    .youtube_account {
+      &:hover {
+        background: transparent;
+        background-image: url(../../../assets/icons/youtubeHoverImg.svg);
+        .socialMediaLogo {
+          display: none !important;
+        }
+        p {
+          color: white;
+        }
+      }
+      .socialMediaLogo {
+        position: absolute;
+        filter: brightness(0.5);
+        top: 77px;
+        right: 0px;
+      }
+    }
+
+    .discord_account {
+      &:hover {
+        background: transparent;
+        background-image: url(../../../assets/icons/discordHoverImg.svg);
+        .socialMediaLogo {
+          display: none !important;
+        }
+        p {
+          color: white;
+        }
+      }
+      .socialMediaLogo {
+        position: absolute;
+        filter: brightness(0.5);
+        top: 76px;
+        right: 0px;
+      }
+    }
+  }
+}

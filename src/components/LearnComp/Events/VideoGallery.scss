@@ -1,0 +1,80 @@
+.vg_wrapper {
+    max-width: 73.81%;
+    margin: auto;
+    h1 {
+        color: #010310;
+        text-align: center;
+        font-family: "Clash Display";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%; /* 40px */
+        text-transform: capitalize;
+    }
+    .gallery{
+        margin-top: 40px;
+        display: flex;
+        gap: 20px;
+        height: 100%;
+        img{
+            border-radius: 20px;
+        }
+        
+        .col1{
+            display: flex;
+            flex-direction: column;
+            gap: 4.11%;
+            max-width: 325px;
+            .photo1{
+                height: 48.84%;
+            }
+            .photo2{
+                height: 47.14%;
+            }
+ 
+
+        }
+        .col2{
+            display: flex;
+            flex-direction: column;
+            gap: 4.11%;
+            max-width: 325px;
+            .photo3{
+                height: 62.47%;
+            }
+            .photo4{
+                height: 33.47%;
+            }
+    
+            
+
+        }
+        .col3{
+            display: flex;
+            flex-direction: column;
+            gap: 4.11%;
+            .photo4{
+                height: 530px;
+            }
+            >div{
+                display: flex;
+                gap: 5.66%;
+                    height: 59.73%;
+                    img{
+                        height: 93%;
+                        max-height: 436px;
+                    
+                }
+                .photo5{
+                    height: 36.16%;
+                }
+                .photo6{
+                    width: 55.47%;
+                }
+                .photo7{
+                    width: 38.83%;
+                }
+            }
+        }
+    }
+}

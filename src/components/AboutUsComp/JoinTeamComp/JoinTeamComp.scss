@@ -1,0 +1,74 @@
+.joinTeamCompContainer {
+  .joinTeamCompWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 100px 20px;
+
+    @media only screen and (max-width: 1100px) {
+      gap: 20px !important;
+    }
+    @media only screen and (max-width: 800px) {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+
+    .leftSection {
+      max-width: 460px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      @media only screen and (max-width: 800px) {
+        max-width: 100%;
+        align-items: center;
+      }
+
+      p {
+        color: #206aff;
+        font-family: var(--main-font-family);
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 30px;
+      }
+
+      h2 {
+        color: var(--Light-Black);
+        font-family: var(--header-font-family);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 60px; /* 120% */
+        letter-spacing: -0.5px;
+      }
+
+      p:last-of-type {
+        color: var(--Black);
+        font-family: var(--main-font-family);
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 27px;
+        text-transform: none;
+        word-spacing: 1.5px;
+      }
+
+      button {
+        margin-top: 30px;
+        max-width: 211px;
+      }
+    }
+
+    .rightSection {
+      img {
+        max-width: 548px;
+        max-height: 263px;
+
+        @media only screen and (max-width: 1100px) {
+          width: 50vw !important;
+        }
+      }
+    }
+  }
+}

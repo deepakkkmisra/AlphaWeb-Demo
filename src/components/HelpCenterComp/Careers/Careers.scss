@@ -1,0 +1,208 @@
+.careersMainWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 100px 20px;
+  padding-bottom: 80px;
+  width: 100%;
+  @media only screen and (max-width: 800px) {
+    gap: 50px;
+  }
+  .careersTopSection {
+    max-width: 980px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    @media only screen and (max-width: 800px) {
+      gap: 20px;
+    }
+    .joinTeamSection {
+      // Join Team Section styling
+
+      p {
+        color: #206aff;
+        text-align: center;
+        font-family: var(--main-font-family);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+      }
+
+      .careersTitle {
+        h3 {
+          color: #010310;
+          text-align: center;
+          font-family: var(--header-font-family);
+          font-size: 50px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 60px; /* 120% */
+          letter-spacing: -0.5px;
+
+          span {
+            background: var(
+              --GRADIENT,
+              linear-gradient(
+                90deg,
+                #1f69ff 51.41%,
+                #05328d 68.28%,
+                #1f93ff 85.89%,
+                #1f69ff 101.03%
+              )
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: var(--header-font-family);
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 60px;
+            letter-spacing: -0.5px;
+          }
+        }
+      }
+
+      .titleDetails {
+        margin-top: 20px;
+        p {
+          color: var(--new-text, #010310);
+          text-align: center;
+          font-family: var(--main-font-family);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 30px; /* 214.286% */
+        }
+      }
+    }
+
+    .joinButton {
+      .viewButton {
+        border-radius: 100px;
+        background: linear-gradient(90deg, #2069ff 0%, #003cb7 100%);
+        display: flex;
+        padding: 10px 50px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: rgba(255, 255, 255, 0.9);
+        text-align: center;
+        font-family: var(--main-font-family);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 214.286% */
+        border: none;
+      }
+    }
+  }
+
+  .availableProfiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1076px;
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid #000;
+    padding: 40px;
+    .teamSection {
+      display: flex;
+      max-width: 1036px;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+
+      gap: 40px;
+
+      h4 {
+        max-width: 172px;
+        width: 100%;
+        color: var(--Text, #131217);
+        font-family: var(--header-font-family);
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.3px;
+      }
+      .jobOpenings {
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+        max-width: 774px;
+        color: var(--Text, #131217);
+        font-family: var(--main-font-family);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        @media only screen and (max-width: 800px) {
+          gap: 20px;
+        }
+        p {
+        }
+        .jobOpeningsBox {
+          display: flex;
+          gap: 10px;
+          .jobButton {
+            max-width: fit-content;
+            padding: 10px 20px;
+          }
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        flex-direction: column;
+
+        h4 {
+          max-width: 100%;
+          text-align: center;
+        }
+
+        .jobOpenings {
+          align-items: center;
+          text-align: center;
+        }
+
+        .jobOpeningsBox {
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    &.profileWithPadding {
+      .teamSection {
+        border-bottom: 1px solid #cecece;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+
+        &:last-child {
+          padding-bottom: 0px;
+          margin-bottom: 0px;
+          border-bottom: 0;
+        }
+      }
+    }
+    &.profileWithNotPadding {
+      .teamSection {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+      }
+    }
+
+    @media only screen and (max-width: 800px) {
+      gap: 20px;
+    }
+  }
+}

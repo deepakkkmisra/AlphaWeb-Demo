@@ -1,0 +1,88 @@
+.returnPolicyContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 100px;
+  @media only screen and (max-width: 1100px) {
+    padding: 50px 50px;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 20px 20px;
+  }
+  .returnPolicyWrapper {
+    width: 100%;
+    .returnPolicyTitle {
+      color: #2069ff;
+      font-family: var(--header-font-family);
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 30px;
+      text-transform: uppercase;
+      @media only screen and (max-width: 600px) {
+        font-size: 20px;
+      }
+    }
+
+    .returnPolicyLastUpdated {
+      font-family: var(--header-font-family);
+      font-size: 20px;
+      margin-top: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.26px;
+      @media only screen and (max-width: 600px) {
+        font-size: 15px;
+      }
+    }
+    .PolicyWrapper {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .returnPolicySection {
+        /* Styles for each section */
+
+        .sectionHeading {
+          font-family: var(--main-font-family);
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          @media only screen and (max-width: 600px) {
+            font-size: 15px;
+          }
+        }
+
+        .refundPolicyText {
+          font-family: var(--main-font-family);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 25px;
+        }
+
+        .contactText {
+          font-family: var(--main-font-family);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 25px;
+          @media only screen and (max-width: 600px) {
+            font-size: 12px;
+          }
+        }
+
+        .contactEmail {
+          font-family: var(--main-font-family);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
